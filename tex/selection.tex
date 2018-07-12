@@ -23,7 +23,11 @@
 \end{frame}
 
 \begin{frame}{Channels, Signals, \& Resource}
-\multiinclude[format=png,start=0,graphics={width=\textwidth}]{multichannel/frame}
+
+\foreach \n in {1,...,10}{%
+\includegraphics<\n>[width=\textwidth]{explanatory/explanatory-\n.pdf}%
+}%
+
 \end{frame}
 
 \begin{frame}{Signals \& Resource}
@@ -39,4 +43,17 @@
 \begin{frame}{Excluded Channel Dynamics}
   \vspace{6.6ex}
   \input{fig/excluded_dynamics.tex}
+\end{frame}
+
+\begin{frame}{Intuition}
+key idea: selection on regulation of same-channel group size \& shape
+\begin{itemize}
+  \item too small: low resource-collection rate
+  \item too big: net negative resource collection due to erroneous activation
+\end{itemize}
+
+more generally speaking,
+
+Selection on Kin Cooperating Group Structure
+
 \end{frame}
