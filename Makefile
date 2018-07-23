@@ -25,4 +25,4 @@ cleaner:
 	latexmk -CA
 	# remove auxillary files, excepting .tex and .bib files
 	find . -type f -name ${BUILD_DIR}"*" ! -name '*.tex' ! -name '*.bib' -delete
-	rm -f main.nav main.snm
+	rm -f main.nav main.snm main.fot
