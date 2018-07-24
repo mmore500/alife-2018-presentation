@@ -57,22 +57,61 @@
 
 
 \begin{frame}{Signals \& Resource}
-  \input{fig/multichannel_signals_resource.tex}
-\end{frame}
-
-
-\begin{frame}{Clumps of Clumps}
-\includegraphics<1>[width=\textwidth]{results/ChannelMap_1011_update0.pdf}%
-\includegraphics<2>[width=\textwidth]{results/ChannelMap_1011_update500000.pdf}%
-\includegraphics<3>[width=\textwidth]{results/ChannelMap_1011_update1000000.pdf}%
-\includegraphics<4>[width=\textwidth]{results/ChannelMap_1011_update2000000.pdf}%
-\includegraphics<5>[width=\textwidth]{results/ChannelMap_1011_update4000000.pdf}%
-\includegraphics<6>[width=\textwidth]{results/ChannelMap_1011_update5000000.pdf}%
-\includegraphics<7>[width=\textwidth]{results/ChannelMap_1011_update7000000.pdf}%
+  \begin{figure}
+  \begin{columns}
+  \begin{column}{0.02\textwidth}
+  \rotatebox{90}{Level 2}
+  \end{column}
+  \begin{column}{0.49\textwidth}
+      \centering
+      \foreach \n in {1,...,12}{%
+      \includegraphics<\n>[width=\textwidth,trim={0 0 0 250},clip]{big_res/frame-\n.png}%
+      }%
+  \end{column}
+  \begin{column}{0.49\textwidth}
+    \centering
+    \includegraphics[width=0.4\textwidth]{channelviz/channelviz-clumpofclumps-crop.png}%
+  \end{column}
+  \end{columns}%
+  \vspace{2ex}
+  \begin{columns}
+  \begin{column}{0.02\textwidth}
+    \rotatebox{90}{Level 1}
+  \end{column}
+  \begin{column}{0.49\textwidth}
+      \centering
+      \foreach \n in {1,...,12}{%
+      \includegraphics<\n>[width=\textwidth,trim={0 0 0 250},clip]{small_res/frame-\n.png}%
+      }%
+  \end{column}
+  \begin{column}{0.49\textwidth}
+    \centering
+    \parbox{\widthof{\includegraphics[width=0.2\textwidth]{channelviz/channelviz-clump-crop}}}{\includegraphics[width=0.2\textwidth]{channelviz/channelviz-clump-crop}}
+    \textbf{~,~}
+    \parbox{\widthof{\includegraphics[width=0.2\textwidth]{channelviz/channelviz-clump2-crop}}}{\includegraphics[width=0.2\textwidth]{channelviz/channelviz-clump2-crop}}
+    \textbf{~,~\dots}
+  \end{column}
+  \end{columns}%
+  \begin{columns}
+  \begin{column}{0.02\textwidth}
+  \end{column}
+  \begin{column}{0.49\textwidth}
+  \begin{subfigure}[b]{\textwidth}
+  \caption{resource}
+  \end{subfigure}
+  \end{column}
+  \begin{column}{0.49\textwidth}
+  \begin{subfigure}[b]{\textwidth}
+  \caption{same-channel networks}
+  \end{subfigure}
+  \end{column}
+  \end{columns}
+  \caption{Co-visualization of same-channel networks and resource distribution.}
+  \end{figure}
 \end{frame}
 
 \begin{frame}{Signals \& Resource: Level 2 {\small(Clumps of Clumps)}}
-foo
+TODO
 \end{frame}
 
 \begin{frame}{Multichannel Inheritance Outcomes}
