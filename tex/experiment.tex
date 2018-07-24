@@ -26,9 +26,21 @@ Manually-designed strategy parameters:
 
 Categorized outcomes by resource-sharing of dominant genotype:
 \begin{itemize}
-\item hog resources to cell (Cell-level individuals) 2
-\item share resources with Level 1 same-channel network (Level-one individuals) 16
-\item share resources with Level 2 same-channel network (Level-two individuals) 15
+\item hog resources to cell
+\begin{itemize}
+\item cell-level individuals
+\item \textit{rare outcome}
+\end{itemize}
+\item share resources with Level 1 same-channel network
+\begin{itemize}
+\item level-one individuals
+\item \textit{frequent outcome}
+\end{itemize}
+\item share resources with Level 2 same-channel network
+\begin{itemize}
+\item level-two individuals
+\item \textit{frequent outcome}
+\end{itemize}
 \end{itemize}
 
 \end{frame}
@@ -110,7 +122,7 @@ End state of same-channel signaling networks in simulation where level-two indiv
 \begin{frame}{Level-one vs. Level-two Relative Fitness}
 
 \begin{figure}
-\includegraphics[width=\textwidth]{results/mean_res_pool2_vs_net_reproduction}
+\includegraphics[width=0.7\textwidth]{results/mean_res_pool2_vs_net_reproduction}
 \caption{
 Correlation plot of population mean $P_2$ (resource-caching strategy) and population net reproduction rate.
 A bootstrapped 95\% confidence interval for the fit is shaded.
@@ -122,7 +134,7 @@ A bootstrapped 95\% confidence interval for the fit is shaded.
 \begin{frame}{Level-two Individuals' Apoptosis Response to Mutation}
 
 \begin{figure}
-\includegraphics[width=\textwidth]{results/champion_res_pool2_vs_champion_damage_suicide0}
+\includegraphics[width=0.7\textwidth]{results/champion_res_pool2_vs_champion_damage_suicide0}
 \caption{
 Correlation plot of dominant genotype $P_2$ (resource-caching strategy) and dominant genotype $M_{c}$ (apoptosis response to mutation).
 A bootstrapped 95\% confidence interval for the fit is shaded.
