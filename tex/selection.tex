@@ -1,28 +1,84 @@
 \section{Selection on Kin Cooperating Group Structure}
 
-\begin{frame}
+\begin{frame}{Design Objectives}
 \begin{itemize}
-\item expect transition to occur
-\item scalable
-\item no simulation of ``realistic'' physics, abstract instead
+\item selection for structure of kin cooperating group $\rightarrow$ expect fraternal transition to occur
+\item scalable (i.e., distributed)
+\item abstraction OK (i.e., ``realistic'' physics not reqd.)
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Resource Collection}
-\begin{itemize}
-\item need to anticipate
-\item need to activate
-\item communication with neighbors
-\end{itemize}
+\begin{frame}{Resource Distribution}
+\begin{figure}
+\begin{columns}
+\begin{column}{0.6\textwidth}
+  \includegraphics<1>[width=\textwidth]{explanatory_sep/r-2.pdf}%
+  \includegraphics<2>[width=\textwidth]{explanatory_sep/r-3.pdf}%
+  \includegraphics<3>[width=\textwidth]{explanatory_sep/r-4.pdf}%
+  \includegraphics<4>[width=\textwidth]{explanatory_sep/r-5.pdf}%
+  \includegraphics<5>[width=\textwidth]{explanatory_sep/r-6.pdf}%
+\end{column}
+\begin{column}{0.2\textwidth}
+\includegraphics<2>[width=\textwidth]{bolt.pdf}%
+\end{column}
+\end{columns}
+\caption{TODO}
+\end{figure}
 \end{frame}
 
-\begin{frame}{Channels, Signals, \& Resource}
-\begin{itemize}
-\item register into explicit cooperating groups called channels
-\end{itemize}
+\begin{frame}{Resource Distribution}
+\Large
+\textbf{Problem:} how to alert neighbors to available resource?
+
+\pause
+
+\textbf{Solution:} activation-quiescence signaling
+
 \end{frame}
 
-\begin{frame}{Channels, Signals, \& Resource}
+\begin{frame}{Activation-Quiescence Signaling}
+\begin{figure}
+\begin{columns}
+\begin{column}{0.45\textwidth}
+  \includegraphics<1>[width=\textwidth]{explanatory_sep/r-2.pdf}%
+  \includegraphics<2>[width=\textwidth]{explanatory_sep/r-3.pdf}%
+  \includegraphics<3>[width=\textwidth]{explanatory_sep/r-4.pdf}%
+  \includegraphics<4>[width=\textwidth]{explanatory_sep/r-5.pdf}%
+  \includegraphics<5>[width=\textwidth]{explanatory_sep/r-6.pdf}%
+\end{column}
+\begin{column}{0.1\textwidth}
+\includegraphics<2>[width=\textwidth]{bolt.pdf}%
+\end{column}
+\begin{column}{0.45\textwidth}
+
+\foreach \n in {1,...,5}{%
+  \includegraphics<\n>[width=\textwidth]{explanatory_sep/sig-\n-nohash.pdf}%
+}%
+
+\end{column}
+\end{columns}
+\caption{TODO}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Resource Distribution}
+\Large
+\textbf{Problem:} how to limit extent of signaling wave?
+
+\normalsize
+
+(i.e., to match limited extent of resource wave)
+
+\Large
+
+\pause
+
+\textbf{Solution:} register cells into explicit cooperating groups called channels
+
+\end{frame}
+
+
+\begin{frame}{Same-channel Signaling Networks}
 
 \begin{figure}
 
@@ -78,7 +134,7 @@ Frame-by-frame animation of a small same-channel network, activation signal, and
 
 \end{frame}
 
-\begin{frame}{Channels, Signals, \& Resource}
+\begin{frame}{Same-channel Signaling Networks}
 
 \begin{figure}
 
@@ -134,7 +190,7 @@ Frame-by-frame animation of a medium-sized same-channel network, activation sign
 
 \end{frame}
 
-\begin{frame}{Channels, Signals, \& Resource}
+\begin{frame}{Same-channel Signaling Networks}
 
 \begin{figure}
 
@@ -190,9 +246,18 @@ Frame-by-frame animation of a large same-channel network, activation signal, and
 
 \end{frame}
 
-\begin{frame}{Signals \& Resource}
-  \vspace{4ex}
-  \input{fig/signals_resource.tex}
+\begin{frame}{Same-channel Signaling Networks}
+
+\Large
+\textbf{Problem:} how to define same-channel signaling groups?
+
+\pause
+
+\textbf{Solution:} make channel-membership inherited
+
+\normalsize
+(with possibility of setting offspring to new channel)
+
 \end{frame}
 
 \begin{frame}{Channel Inheritance}
@@ -212,8 +277,11 @@ key idea: selection on regulation of same-channel group size \& shape
   \item too big: net negative resource collection due to erroneous activation
 \end{itemize}
 
+\pause
+\vspace{3ex}
+
 more generally speaking,
 
-Selection on Kin Cooperating Group Structure
+\textbf{Selection on Kin Cooperating Group Structure}
 
 \end{frame}
