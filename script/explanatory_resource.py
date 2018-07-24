@@ -8,9 +8,9 @@ import matplotlib.lines as mlines
 matplotlib.rcParams['pdf.fonttype'] = 42
 
 #
-s_res = [0,  1,  2,  2,  2,  2,  2,  2,  2]
-m_res = [0,  1,  5, 13, 13, 13, 13, 13, 13]
-l_res = [0,  1,  5, 13,-47,-62,-62,-62,-62]
+s_res = [0,  0,  1,  2,  2,  2,  2,  2,  2,  2]
+m_res = [0,  0,  1,  5, 13, 13, 13, 13, 13, 13]
+l_res = [0,  0,  1,  5, 13,-47,-62,-62,-62,-62]
 
 def draw(data,name):
 
@@ -30,7 +30,7 @@ def draw(data,name):
         plt.gca().get_yaxis().set_ticks([])
         plt.minorticks_off()
         # plt.majorticks_off()
-        plt.ylabel('Net Resource',fontsize=36)
+        plt.ylabel('Net Resource Collected',fontsize=36)
 
         plt.gca().spines['top'].set_visible(False)
         plt.gca().spines['right'].set_visible(False)
@@ -40,7 +40,7 @@ def draw(data,name):
 
         plt.tight_layout(pad=0.4)
 
-        plt.savefig('img/explanatory_sep/'+name+'-'+str(i)+'.pdf')
+        plt.savefig('img/explanatory_sep/'+name+'-'+str(i+1)+'.pdf',transparent=True)
 
 draw(s_res,'rs')
 draw(m_res,'rm')
