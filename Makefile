@@ -16,7 +16,7 @@ present:
 ${BUILD_DIR}.pdf: main.tex
 	latexmk -pdf -silent \
     -jobname=${BUILD_DIR} \
-    -pdflatex="pdflatex -interaction=nonstopmode" main.tex
+    -pdflatex="pdflatex -interaction=batchmode" main.tex
 
 clean:
 	rm ${BUILD_DIR}.pdf
