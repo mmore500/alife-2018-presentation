@@ -29,79 +29,60 @@ Parameters for manually-designed strategies:
 
 \begin{frame}{Outcomes}
 
-Among replicates, reproductive division of labor near universal.
+Among replicates, reproductive division of labor universal.
 
 \pause
 \vspace{2ex}
 
-However, three distinct categories of resource-sharing behavior observed.
+However, a spectrum resource-sharing behavior was observed.
 
-\pause
-\vspace{2ex}
-
-Categorized outcomes by resource-sharing of dominant genotype:
 \begin{itemize}[<+->]
-\item hog resources to cell
-\pause
-\begin{itemize}
-\item cell-level individuals
-\item \textit{rare outcome}
-\end{itemize}
-\item share resources with Level 1 same-channel network
-\pause
-\begin{itemize}
-\item level-one individuals
-\item \textit{frequent outcome}
-\end{itemize}
-\item share resources with Level 2 same-channel network
-\pause
-\begin{itemize}
-\item level-two individuals
-\item \textit{frequent outcome}
-\end{itemize}
+\item hog all resources to Level 1 same-channel network
+\item split resources between Level 1 and Level 2 same-channel network
+\item send most resources to Level 2, some to Level 1 same-channel network
 \end{itemize}
 
 \end{frame}
 
-\begin{frame}{Outcome: Cell-level Individuality}
+\begin{frame}{Outcome: Level-One Resource Allocation}
 \begin{figure}
 \begin{columns}
 \begin{column}{0.6\textwidth}
-\includegraphics[width=\textwidth]{img/results/ChannelMap_1022_update19500000.png}
+\includegraphics[width=\textwidth]{img/results/ChannelMap_1003_update24995104}
 \end{column}
 \begin{column}{0.4\textwidth}
 \caption{
-End state of same-channel signaling networks in simulation where cell-level individuality dominated.
+End state of same-channel signaling networks in simulation where exclusively level-one resource allocation dominated.
 }
 \end{column}
 \end{columns}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Outcome: Level-one Individuality}
+\begin{frame}{Outcome: Intermediate Resource Allocation}
 \begin{figure}
 \begin{columns}
 \begin{column}{0.6\textwidth}
-\includegraphics[width=\textwidth]{img/results/ChannelMap_1041_update19500000.png}
+\includegraphics[width=\textwidth]{img/results/ChannelMap_1046_update24995104}
 \end{column}
 \begin{column}{0.4\textwidth}
 \caption{
-End state of same-channel signaling networks in simulation where level-one individuality dominated.
+End state of same-channel signaling networks in simulation where intermediate resource allocation dominated.
 }
 \end{column}
 \end{columns}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Outcome: Level-two Individuality}
+\begin{frame}{Outcome: Primarily Level 2 Resource Allocation}
 \begin{figure}
 \begin{columns}
 \begin{column}{0.6\textwidth}
-\includegraphics[width=\textwidth]{img/results/ChannelMap_1047_update19500000.png}
+\includegraphics[width=\textwidth]{img/results/ChannelMap_1019_update24995104}
 \end{column}
 \begin{column}{0.4\textwidth}
 \caption{
-End state of same-channel signaling networks in simulation where level-two individuality dominated.
+End state of same-channel signaling networks in simulation where primarily level-two resource allocation dominated.
 }
 \end{column}
 \end{columns}
@@ -111,7 +92,7 @@ End state of same-channel signaling networks in simulation where level-two indiv
 \begin{frame}{Level-one vs. Level-two Relative Fitness}
 
 \begin{figure}
-\includegraphics[width=0.7\textwidth]{results/mean_res_pool2_vs_net_reproduction}
+\includegraphics[width=0.8\textwidth]{results/mean_res_pool2_vs_net_reproduction}
 \caption{
 Correlation plot of population mean $P_2$ (resource-caching strategy) and population net reproduction rate.
 A bootstrapped 95\% confidence interval for the fit is shaded.
@@ -123,7 +104,7 @@ A bootstrapped 95\% confidence interval for the fit is shaded.
 \begin{frame}{Level-two Individuals' Apoptosis Response to Mutation}
 
 \begin{figure}
-\includegraphics[width=0.7\textwidth]{results/champion_res_pool2_vs_champion_damage_suicide0}
+\includegraphics[width=0.8\textwidth]{results/champion_res_pool2_vs_champion_damage_suicide0}
 \caption{
 Correlation plot of dominant genotype $P_2$ (resource-caching strategy) and dominant genotype $M_{c}$ (apoptosis response to mutation).
 A bootstrapped 95\% confidence interval for the fit is shaded.
