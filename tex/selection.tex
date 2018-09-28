@@ -1,13 +1,10 @@
 \section{Inducing \& Detecting Fraternal Transitions}
 
 \begin{frame}{Design Objectives}
+\Large
+expect \textit{detectable} fraternal transition to occur
 \begin{itemize}
-\item expect detectable fraternal transition to occur
-\begin{itemize}
-\item register organisms into explicit, hereditary cooperating groups
-\end{itemize}
-\item scalable (i.e., distributed)
-\item abstraction OK (i.e., ``realistic'' physics not reqd.)
+\item register organisms into explicit, hereditarily-defined cooperating groups
 \end{itemize}
 \end{frame}
 
@@ -283,15 +280,15 @@ Frame-by-frame animation of a large same-channel network, activation signal, and
 
 \end{frame}
 
-\begin{frame}{Channel Inheritance}
-  \vspace{8ex}
-  \input{fig/channel_inheritance.tex}
-\end{frame}
-
-\begin{frame}{Excluded Channel Dynamics}
-  \vspace{6.6ex}
-  \input{fig/excluded_dynamics.tex}
-\end{frame}
+% \begin{frame}{Channel Inheritance}
+%   \vspace{8ex}
+%   \input{fig/channel_inheritance.tex}
+% \end{frame}
+%
+% \begin{frame}{Excluded Channel Dynamics}
+%   \vspace{6.6ex}
+%   \input{fig/excluded_dynamics.tex}
+% \end{frame}
 
 \begin{frame}{Channels, Signals, \& Resource}
 key idea: selection on regulation of same-channel group size \& shape
@@ -306,24 +303,34 @@ key idea: selection on regulation of same-channel group size \& shape
 
 \begin{frame}{Selection for Same-channel Network Individuality}
 
-\onslide<2->{
+\onslide<8->{
 \begin{itemize}
-\item resource sharing \onslide<3->{$\checkmark$} \onslide<5->{\faSearch}
-\item reproductive division of labor \onslide<4->{$\checkmark$} \onslide<5->{\faSearch}
+\item resource sharing \onslide<8->{$\checkmark$} \onslide<9->{\faSearch}
+\item reproductive division of labor \onslide<8->{$\checkmark$} \onslide<10->{\faSearch}
 \end{itemize}
 }
-
-\vspace{6ex}
 
 \begin{figure}
 \begin{columns}
 \begin{column}{0.5\textwidth}
   \centering
-  \includegraphics[width=0.7\textwidth]{channelviz/channelviz-clump-crop}
+  \onslide<1-6>{\includegraphics[width=0.7\textwidth]{channelviz/channelviz-clump-crop}}
+  \footnotesize
+  \begin{itemize}[<+->]
+    \item same-channel cells compete, displace one another
+    \item clump grows slowly
+    \item once full-sized, wastes resource
+  \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
   \centering
   \includegraphics[width=0.5\textwidth]{channelviz/channelviz-clump2-crop}
+  \footnotesize
+  \begin{itemize}[<+->]
+    \item same-channel cells pool resource, only periphery reproduces
+    \item clump grows quickly
+    \item once full-sized, accumulates resource wealth
+  \end{itemize}
 \end{column}
 \end{columns}
 \caption{A juxtaposition of two (competing) clumps.}
